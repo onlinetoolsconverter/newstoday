@@ -1,0 +1,71 @@
+baseURL = 'https://onlinetoolsconverter.github.io/newstoday/'
+languageCode = 'en-us'
+title = 'News Today'
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+
+theme = 'lightbi-hugo'
+
+
+googleAnalytics = "XXX"
+enableRobotsTXT = true
+enableGitInfo = false
+Paginate = 10
+
+[permalinks]
+  posts = '/:slug/'
+  tags = 'tag/:slug/'
+  
+[minify]
+  minifyOutput = false
+  
+[params]
+    showRelatedPosts = true #for lightbi related posts
+    description = "News Today"
+    author = "Md Imtiaj"
+    selfHosted = true
+	mainSections = ["post","posts"]
+	#dateFormat = "2 January 2023"
+	comments = false
+	readingTime = true
+	wordCount = true
+	useHLJS = false
+	socialShare = true
+	delayDisqus = true
+	summaryLength  = "9"
+	gcse = false
+	Lastmod = true
+	rss = true 
+	pagination = "10"
+	hideAuthor = true
+	darkMode = false
+
+  [params.mytags]
+	go = 'Go is developed by google.'
+	php = 'PHP is the most populer language for web developemnt.'
+
+
+
+#nav main menu
+
+[[menu.main]]
+    name = "News Today"
+    url = "/"
+    weight = 1	
+
+
+
+
+
+#menu for footer
+
+    
+[[menu.footer]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 1
+	
+
+
+
